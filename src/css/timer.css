@@ -1,0 +1,34 @@
+.timer-list {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center;    */
+}
+
+.timer-value {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.timer-label {
+  font-size: 8px;
+}
+
+.timer-separator {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(1, 1, 1, 0.2);
+  display: block;
+  padding-bottom: 13px;
+}
+
+.last-value {
+  color: #0f7c41;
+}

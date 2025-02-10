@@ -13,13 +13,71 @@
     />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
-  <body>
-    <body>
-      <main class="container">
-        <section>Hello world</section>
-      </main>
-    </body>
 
-    <script type="module" src="/src/main.js"></script>
+  <body>
+    <main>
+      <section class="container">
+        <div class="box-main">
+          <a href="./index.html" aria-label="Go to the main page">
+            <img
+              class="logo"
+              src="./src/image/logo.png"
+              alt="logo"
+              width="100"
+              height="30"
+              loading="lazy"
+            />
+          </a>
+
+          <ul class="list-info">
+            <li class="list-info-item">
+              <span class="list-info-span">Безоплатний вебінар</span>
+            </li>
+            <li class="list-info-item">
+              <span class="list-info-span">Старт: 10 січня 19:30</span>
+            </li>
+          </ul>
+
+          <h1 class="title-main">
+            Навчіться створювати Excel-таблиці на pro-рівні
+          </h1>
+
+          <p class="text-info">
+            Опануйте функціонал Microsoft Excel, автоматизуйте свою роботу та
+            створюйте таблиці швидко і в задоволення
+          </p>
+        </div>
+
+        <div class="box-info">
+          <h3 class="title-info">Реєструйся просто зараз</h3>
+
+          <ul class="timer-list">
+            <li class="timer-item">
+              <span class="timer-value" id="days">00</span
+              ><span class="timer-label">днів</span>
+            </li>
+            <li><span class="timer-separator">:</span></li>
+            <li class="timer-item">
+              <span class="timer-value" id="hours">00</span
+              ><span class="timer-label">годин</span>
+            </li>
+            <li><span class="timer-separator">:</span></li>
+            <li class="timer-item">
+              <span class="timer-value" id="minutes">00</span
+              ><span class="timer-label">хвилин</span>
+            </li>
+            <li><span class="timer-separator">:</span></li>
+            <li class="timer-item">
+              <span class="timer-value last-value" id="seconds">00</span
+              ><span class="timer-label">секунд</span>
+            </li>
+          </ul>
+
+          <button class="btn" type="button">Зареєструватися</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

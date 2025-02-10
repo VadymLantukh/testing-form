@@ -1,2 +1,55 @@
-@import "reset.css";
-@import "container";
+@import 'reset.css';
+@import 'container.css';
+@import 'timer.css';
+@import 'button.css';
+
+.box-main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list-info {
+  color: #0f7c41;
+}
+
+.list-info-item {
+  margin-bottom: 16px;
+}
+
+.list-info-span {
+  padding: 4px 8px;
+  border: #0f7c41 dashed 1px;
+}
+
+.title-main {
+  font-weight: 700;
+  font-size: 32px;
+  width: 240px;
+  line-height: 125%;
+}
+
+.text-info {
+  width: 300px;
+}
+
+.box-info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  padding: 32px 20px;
+  width: 320px;
+  height: 242px;
+  box-shadow: 0 0 20px 0 rgba(15, 124, 65, 0.2);
+  background-color: #fff;
+}
+
+.title-info {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+}
