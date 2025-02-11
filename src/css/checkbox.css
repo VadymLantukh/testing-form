@@ -1,0 +1,53 @@
+.privacy-checkbox {
+  display: flex;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  margin-bottom: 12px;
+}
+
+.custom-checkbox {
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border: 2px solid #0f7c41;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  border-color: #0f7c41;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 8px;
+  border: solid #0f7c41;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}

@@ -1,15 +1,53 @@
 body {
   background-image: url('../../src/image/mobile/background-mobile.png');
+  background-image: linear-gradient(
+      rgba(231, 231, 231, 0.5),
+      rgba(231, 231, 231, 0.5)
+    ),
+    url('../../src/image/mobile/background-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 100%;
-  background-color: #e7e7e7;
   height: 100vh;
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(
+        rgba(231, 231, 231, 0.5),
+        rgba(231, 231, 231, 0.5)
+      ),
+      url('../../src/image/tab/background-tab.png');
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-image: linear-gradient(
+        rgba(231, 231, 231, 0.5),
+        rgba(231, 231, 231, 0.5)
+      ),
+      url('../../src/image/desc/background-desc.png');
+  }
 }
 
 .container {
   padding: 20px 20px;
   max-width: 360px;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 29px 32px;
+    max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    padding: 40px 112px;
+    max-width: 1440px;
+  }
 }
