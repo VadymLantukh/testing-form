@@ -56,14 +56,14 @@
   border: #0f7c41 dashed 1px;
 }
 
-.data-span {
-  font-weight: 700;
-}
-
 @media only screen and (min-width: 768px) {
   .list-info-span {
     padding: 6px 16px;
   }
+}
+
+.data-span {
+  font-weight: 700;
 }
 
 .title-main {
@@ -77,7 +77,6 @@
   .title-main {
     width: 280px;
     font-size: 36px;
-    line-height: 122%;
   }
 }
 
@@ -85,7 +84,6 @@
   .title-main {
     width: 624px;
     font-size: 56px;
-    line-height: 122%;
   }
 }
 
